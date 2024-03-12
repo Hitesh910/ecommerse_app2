@@ -145,42 +145,6 @@
 //   ));
 // }
 
-import 'package:flutter/material.dart';
-void main()
-{
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.blue,
-        appBar: AppBar(
-          title: Text("An Indian Flag"),
-          backgroundColor:  Colors.blue,
-          centerTitle: true,
-        ),
-        body: Center(
-          child: Container(
-            alignment: Alignment.center,
-            child: Text("✴︎",style: TextStyle(color: Color(0xff00008b),fontSize: 60)),
-            height: 150,
-            width: 250,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-              begin: Alignment(0, -0.5),
-                  end: Alignment(0,0.5),colors: [
-                Color(0xffff5722),
-                Colors.white,
-                Color(0xff388e3d)
-              ])
-            ),
-          ),
-        ),
-      ),
-    ),
-  ));
-}
-
-
 // import 'package:flutter/material.dart';
 // void main()
 // {
@@ -188,27 +152,72 @@ void main()
 //     debugShowCheckedModeBanner: false,
 //     home: SafeArea(
 //       child: Scaffold(
+//         backgroundColor: Colors.blue,
 //         appBar: AppBar(
-//           title: Text("Watch"),
-//           backgroundColor: Color(0xff48416a),
+//           title: Text("An Indian Flag"),
+//           backgroundColor:  Colors.blue,
+//           centerTitle: true,
 //         ),
-//           body: Center(
-//             child: Container(
-//               decoration: BoxDecoration(
-//                 gradient: LinearGradient(
-//                   begin: Alignment(0,-0.4),
-//                 end: Alignment(0,0.5),
-//                 colors: [
-//                   Color(0xff47446e),
-//                   Color(0xff2b81d1),
-//                 ]),
-//
-//
-//               ),
+//         body: Center(
+//           child: Container(
+//             alignment: Alignment.center,
+//             child: Text("✴︎",style: TextStyle(color: Color(0xff00008b),fontSize: 60)),
+//             height: 150,
+//             width: 250,
+//             decoration: BoxDecoration(
+//               gradient: LinearGradient(
+//               begin: Alignment(0, -0.5),
+//                   end: Alignment(0,0.5),colors: [
+//                 Color(0xffff5722),
+//                 Colors.white,
+//                 Color(0xff388e3d)
+//               ])
 //             ),
 //           ),
+//         ),
 //       ),
 //     ),
 //   ));
 // }
+
+
+import 'package:flutter/material.dart';
+void main()
+{
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("Watch"),
+          backgroundColor: Color(0xff48416a),
+        ),
+          body: Center(
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment(0,-0.4),
+                end: Alignment(0,0.5),
+                colors: [
+                  Color(0xff47446e),
+                  Color(0xff2b81d1),
+                ]),
+                
+
+              ),child: Align(
+              alignment: Alignment.center,
+              child: Container(
+                height: 80,
+                width: 200,
+                alignment: Alignment.center,
+                child: Text("Flutter",style: TextStyle(color: Colors.white,fontSize: 25)),
+                decoration: BoxDecoration(color: Color(0xff466b9b),borderRadius: BorderRadius.circular(30)),
+            ),
+            ),
+            ),
+          ),
+      ),
+    ),
+  ));
+}
 
